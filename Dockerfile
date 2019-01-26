@@ -9,6 +9,7 @@ apt-get install -y curl \
 	php-mysql \
 	php-gd \
 	php-mbstring \
+	php-imagick \
 	mysql-server && \
 apt-get clean && apt-get autoclean && \
 rm -rf /var/lib/apt/lists/* && \
