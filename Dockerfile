@@ -29,5 +29,6 @@ RUN chmod 755 /run.sh
 EXPOSE 80
 
 VOLUME ["/var/lib/mysql"]
+VOLUME ["/etc/apache2"]
 
 CMD ["/bin/bash","/run.sh"]
