@@ -12,7 +12,8 @@ RUN apt update -y && \
 	docker-php-ext-install gd && \
 	apt-get clean && apt-get autoclean && \
 	rm -rf /var/lib/apt/lists/* && \
-	rm -rf /var/www/html/*
+	rm -rf /var/www/html/* && \
+	a2enmod rewrite
 RUN wget -O /zenphoto.tar.gz https://github.com/zenphoto/zenphoto/archive/v1.5.1.tar.gz
 #RUN sed -i "/upload_max_filesize/c\upload_max_filesize = 60M" /etc/php/7.1/apache2/php.ini && \
 RUN echo "<Directory /var/www>" >> /etc/apache2/sites-available/000-default.conf && \
