@@ -1,3 +1,5 @@
+Includes Imagick support, just enable it in the zenphoto options after installation.
+
 This version uses an external database.  I run a mariadb container for this.  You will need to specify the database server on first run.
 
 # docker-zenphoto
