@@ -27,3 +27,4 @@ RUN chmod 755 /run.sh
 
 EXPOSE 80
 CMD ["/bin/bash","/run.sh"]
+RUN rm -f /var/run/apache2/apache2.pid
